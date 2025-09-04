@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory Management System</title>
+  
+  <link rel="stylesheet" href="/css/root.css"/>
+  <link rel="stylesheet" href="/css/index.css"/>
+  <link rel="stylesheet" href="/icons/css/all.min.css"/>
+  
+</head>
+
+<body>
+  
+  <div class="main-container">
+    <div class="login-form-div">
+      
+      <img class="logo" src="/images/logo_purple_background.png" alt="Inventor Logo" />
+      <p class="login-text">Log into your account</p>
+      
+      <span id="form-error-message" class="hide-error-message">Haha</span>
+      
+      <form id="login-form">
+        <div class="input-group">
+          <input type="text" name="username" id="username-input">
+          <label for="Username">Username</label>
+          <button id="clear-user-input" class="clear-user-input"><i class="fa-solid fa-xmark"></i></button>
+          <i id="error-username-icon" class="fa-solid fa-circle-exclamation hide-error-icon"></i>
+          <p id="error-username" class="error-username"></p>
+        </div>
+        
+        <div class="input-group">
+          <input type="password" name="password" id="password-input">
+          <label for="Password">Password</label>
+          <button id="toggle-password-visibility" class="toggle-password-visibility">
+            <i id="eye-slash-icon" class="fa-solid fa-eye-slash show-icon"></i>
+            <i id="eye-icon" class="fa-solid fa-eye hide-icon"></i>
+          </button>
+          <i id="error-password-icon" class="fa-solid fa-circle-exclamation hide-error-icon"></i>
+          <p id="error-password" class="error-password"></p>
+        </div>
+        
+        <button class="login-button" type="submit">
+          <span class="login-button-text-value">Log in</span>
+          <svg class="login-button-loading-spinner" viewBox="0 0 50 50">
+            <circle class="spinner-path" r="20" cx="25" cy="25" />
+          </svg>
+        </button>
+      </form>
+      
+      <a class="forgot-pass-link" href="#">Forgot password?</a>
+      
+      <footer>
+        
+        <ul class="footer-nav-link">
+          <li><a href="#">About</a></li>
+          <li><a href="#">ICT Support</a></li>
+          <li><a href="#">Legal</a></li>
+        </ul>
+        
+        <p class="copyright">Inventor.io &copy; 2025.</p>
+        
+      </footer>
+      
+    </div>
+    
+  </div>
+  
+  
+  
+  <script src="/javascript/index.js"></script>
+  
+</body>
+
+</html>
